@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #fff0f5;
+    font-family: sans-serif;
+  }
+  
+  .carousel-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 40px 0;
+  }
+  
+  .carousel-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+  }
+
+  .crosal h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;    
+  }
+  
+  .carousel-track img {
+    flex: 0 0 10%;
+    width: 100%;
+    height: 170px; /* Fixed height */
+    object-fit: cover; /* Ensures image is not stretched */
+    border: 1px solid rgba(0, 0, 0, 0.239);
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s;
+    box-sizing: border-box;
+    margin: 10px;
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+  }
+  
+  
+  .carousel-track img:hover {
+    transform: scale(1.05);
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .carousel-track img {
+      flex: 0 0 33.33%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-track img {
+      flex: 0 0 50%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel-track img {
+      flex: 0 0 100%;
+    }
+  }
+  

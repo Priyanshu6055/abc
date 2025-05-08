@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="faqs">
+        <div class="container">
+
+
+            <h3>FAQ's – Ideate Cohort 2025- SHEvolution</h3>
+
+
+            <ul class="collapsible expandable">
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">expand_more</i>1. What is the objective of
+                        the Ideate Cohort 2025 program?</div>
+                    <div class="collapsible-body">
+                        <p>The Ideate Cohort 2025 is a 10-week capacity-building and pre-incubation program designed for
+                            idea-stage startups. Its aim is to impart knowledge about essential concepts and instruments
+                            of entrepreneurship to transform ideas into Minimum Viable Products (MVPs).
+
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">expand_more</i>2. What is the duration of
+                        the program?</div>
+                    <div class="collapsible-body">
+                        <p>The program spans 10 weeks, focusing on capacity building and pre-incubation for idea-stage
+                            startups.
+
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">expand_more</i>3. What is the cost to
+                        participate in the program?</div>
+                    <div class="collapsible-body">
+                        <p>There’s no cost involved for program. Yet, if you want some specific services, like company
+                            registration, IPR registration etc, that cost would be as per actuals and would be bear by
+                            the startup/participant.
+
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">expand_more</i>4. Can I apply if my
+                        startup is not yet incorporated?</div>
+                    <div class="collapsible-body">
+                        <p>Yes, startup incorporation is not mandatory at this stage. You may incorporate during the
+                            program or at a later stage.
+
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">expand_more</i>5. What is the structure of
+                        the program?</div>
+                    <div class="collapsible-body">
+                        <p>The program sessions will be conducted online, most likely scheduled on Saturdays.
+                            A detailed training schedule, including exact dates, will be shared with selected
+                            participants closer to the starting date.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">expand_more</i>6. What support and
+                        resources are provided during the program?
+                    </div>
+                    <div class="collapsible-body">
+                        <p>Participants receive mentorship, guidance, and access to resources such as workshops,
+                            networking opportunities, investor connect and advisory services to help develop their ideas
+                            into viable businesses.
+
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">expand_more</i> 7. Can I apply as a solo
+                        founder?</div>
+                    <div class="collapsible-body">
+                        <p>Yes, solo women founders can apply. You can choose to continue the journey on your own or add
+                            team members later.
+
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">expand_more</i>8. Is this a certified
+                        program?
+                    </div>
+                    <div class="collapsible-body">
+                        <p>Yes, participants will receive certificates at the end of the pre-incubation period.
+                            Additionally, ideas developed into MVPs will have the chance to pursue further incubation
+                            facilities.
+
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <style>
+        .faqs {
+            height: 100vh !important;
+            max-height: 600px !important;
+            /* Set the height you want */
+            overflow-y: auto;
+            /* Enables vertical scroll only for the FAQ */
+            padding: 20px;
+            
+            /* Optional: give it a background to stand out */
+            border: 1px solid #ddd;
+            /* Optional: visual boundary */
+            border-radius: 8px;
+        }
+
+        .faqs {
+            height: 100vh;
+          
+        }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.collapsible');
+            M.Collapsible.init(elems, { accordion: false });
+        });
+
+        function expandAll() {
+            $(".collapsible-header").addClass("active");
+            $(".collapsible").collapsible({ accordion: false });
+        }
+
+        function collapseAll() {
+            $(".collapsible-header").removeClass("active");
+            $(".collapsible").collapsible({ accordion: true });
+            $(".collapsible").collapsible({ accordion: false });
+        }
+    </script>
+
+</body>
+
+</html>
